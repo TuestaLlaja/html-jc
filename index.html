@@ -10,93 +10,125 @@
             font-family:'K2D', sans-serif; 
         }  
         img{
-            
-            width:40%;
-            border-radius: 0.2em;
-            display: inline;
-            margin-left:30%;
-            margin-right: 1em; 
-            
-            border: 2px solid rgb(98, 98, 134);
-        
+            -webkit-transition: width 2s; 
+            transition: width 2s;
         }
         @media (max-width: 350px){
             img{
                 width:5em;
                 border-radius: 0.2em;
             }
-        }  
+        } 
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            border: 2px solid rgb(87, 176, 228);
+            border-style: groove;
+        } 
         div{
             margin: 3%;
         }
         div.centro{
             text-align:center ; 
         }
+        body{
+            background: rgb(185, 184, 184);
+        }
+       
+        body::-webkit-scrollbar {
+            width: 1em;
+        }
+ 
+        body::-webkit-scrollbar-track {
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.897);
+        }
+ 
+        body::-webkit-scrollbar-thumb {
+            background-color: rgb(224, 219, 219);
+            outline: 1px solid rgb(28, 75, 122);
+        }
+      
+        img:hover {
+            width: 500px;
+           
         
+            -webkit-transition: width 2s; /* Safari */
+            transition: width 2s;
+        }
+        #hoja{
+            background-color: aliceblue;
+            margin-top: 2rem;
+            border-style: outset;
+        }
+                    
    
     </style>
 </head>
 
 <body>
-    <div><img src="tokio.jpg" alt="photo tokio">
-    </div>
-    <div id="titulo" class="centro"><b>What can you do at Tokyo</b></div>
+    <div id="hoja">
+        <img class="center" src="tokio.jpg" alt="photo tokio">
+        
+        <div id="titulo" class="centro"><b>What can you do at Tokyo</b></div>
 
-    <div>
-        <p>Tokyo (東京, Tōkyō) is Japan's capital and the world's most populous metropolis. It is also one of Japan's 47
-            prefectures, consisting of 23 central city wards and multiple cities, towns and villages west of the city
-            center. The Izu and Ogasawara Islands are also part of Tokyo.
-        </p>
-    </div>
-    <div>
-        <p>
-            Prior to 1868, Tokyo was known as Edo. A small castle town in the 16th century, Edo became Japan's
-            political center in 1603 when Tokugawa Ieyasu established his feudal government there. A few decades later,
-            Edo had grown into one of the world's most populous cities. With the Meiji Restoration of 1868, the emperor
-            and capital moved from Kyoto to Edo, which was renamed Tokyo ("Eastern Capital"). Large parts of Tokyo were
-            destroyed in the Great Kanto Earthquake of 1923 and in the air raids of 1945.
-        </p>
-    </div>
-    <div>
-        <p>
-            today, Tokyo offers a seemingly unlimited choice of shopping, entertainment, culture and dining to its
-            visitors. The city's history can be appreciated in districts such as Asakusa and in many excellent museums,
-            historic temples and gardens. Contrary to common perception, Tokyo also offers a number of attractive green
-            spaces in the city center and within relatively short train rides at its outskirts.
-        </p>
-    </div>
-
-    <form>
         <div>
-            <p>
-                What do you think about tokio?
+            <p>Tokyo (東京, Tōkyō) is Japan's capital and the world's most populous metropolis. It is also one of Japan's 47
+                prefectures, consisting of 23 central city wards and multiple cities, towns and villages west of the city
+                center. The Izu and Ogasawara Islands are also part of Tokyo.
             </p>
         </div>
-        <label>
-            <div id="checkbox">
-                <input type="radio" name="touris" id="1er">tourism<br>
-                <input type="radio" name="touris" id="1er">bussines<br>
-                <input type="radio" name="touris" id="1er">stay to live<br>
+        <div>
+            <p>
+                Prior to 1868, Tokyo was known as Edo. A small castle town in the 16th century, Edo became Japan's
+                political center in 1603 when Tokugawa Ieyasu established his feudal government there. A few decades later,
+                Edo had grown into one of the world's most populous cities. With the Meiji Restoration of 1868, the emperor
+                and capital moved from Kyoto to Edo, which was renamed Tokyo ("Eastern Capital"). Large parts of Tokyo were
+                destroyed in the Great Kanto Earthquake of 1923 and in the air raids of 1945.
+            </p>
+        </div>
+        <div>
+            <p>
+                today, Tokyo offers a seemingly unlimited choice of shopping, entertainment, culture and dining to its
+                visitors. The city's history can be appreciated in districts such as Asakusa and in many excellent museums,
+                historic temples and gardens. Contrary to common perception, Tokyo also offers a number of attractive green
+                spaces in the city center and within relatively short train rides at its outskirts.
+            </p>
+        </div>
+
+        <form>
+            <div>
+                <p>
+                    What do you think about tokio?
+                </p>
             </div>
-            <input type="checkbox" name="touris" id="1er" checked>you accept the terms and conditions<br>
+            <label>
+                <div id="checkbox">
+                    <input type="radio" name="touris" id="1er">tourism<br>
+                    <input type="radio" name="touris" id="1er">bussines<br>
+                    <input type="radio" name="touris" id="1er">stay to live<br>
+                </div>
+                <input type="checkbox" name="touris" id="1er" checked>you accept the terms and conditions<br>
 
-            <input type="text" placeholder="where are you from?">
-            <input type="submit" name="submit" id="1er">
-        </label>
+                <input type="text" placeholder="where are you from?">
+                <input type="submit" name="submit" id="1er">
+            </label>
 
-    </form>
-    <form>
-        <p> give me your information</p>
-        <label for="cotact">
-            <input id="contact" type="text" placeholder="fisrt Name">
-            <input id="contact" type="text" placeholder="Last Name">
-            <input id="contact" type="text" placeholder="mobile phone"><br>
-            <input id="contact" type="submit" name="submit" id="1er">
+        </form>
+        <form>
+            <p> give me your information</p>
+            <label for="cotact">
+                <input id="contact" type="text" placeholder="fisrt Name">
+                <input id="contact" type="text" placeholder="Last Name">
+                <input id="contact" type="text" placeholder="mobile phone"><br>
+                <input id="contact" type="submit" name="submit" id="1er">
 
 
-        </label>
+            </label>
 
-    </form>
+        </form>
+    </div>
 </body>
 
 </html>
